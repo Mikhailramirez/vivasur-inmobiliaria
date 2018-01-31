@@ -20,6 +20,8 @@ body{
     color: #fff;
     background-size: cover;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .encabezado{
@@ -109,6 +111,12 @@ body{
     color: #858584;
 }
 
+.texto-encabezado {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+}
+
 .texto-encabezado .display-4 {
     margin-top: 9rem;
 }
@@ -128,8 +136,42 @@ body{
     border-color: transparent;
 }
 
+.flecha-bajar a {
+    text-align: center;
+    display: inline-block;
+    color: #fff;
+    font-size: 4rem;
+    animation: flecha-animada 2s ease-in-out infinite;
+}
 
+@keyframes flecha-animada {
+    from {
+        transform: translateY(0);
+    }
+    
+    50% {
+        transform: translateY(6px);
+    }
+    
+    to {
+        transform: translateY(0);
+    }
+}
 
+/*--------------------------
+SECCION AGENCIA
+----------------------------*/
+
+.agencia {
+    background: #fff;
+    color: $texto;
+}
+
+.agencia img {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
 
 
 

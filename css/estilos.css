@@ -9,7 +9,9 @@ body {
   background: url("../images/fondo-encabezado.jpg") no-repeat center top;
   color: #fff;
   background-size: cover;
-  height: 100vh; }
+  height: 100vh;
+  display: flex;
+  flex-direction: column; }
 
 .encabezado {
   background: #0753B5;
@@ -83,6 +85,11 @@ body {
 #menu-principal ul li.active a {
   color: #858584; }
 
+.texto-encabezado {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center; }
+
 .texto-encabezado .display-4 {
   margin-top: 9rem; }
 
@@ -98,5 +105,31 @@ body {
 .btn-primary:active:hover {
   background-color: #FF001F;
   border-color: transparent; }
+
+.flecha-bajar a {
+  text-align: center;
+  display: inline-block;
+  color: #fff;
+  font-size: 4rem;
+  animation: flecha-animada 2s ease-in-out infinite; }
+
+@keyframes flecha-animada {
+  from {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(6px); }
+  to {
+    transform: translateY(0); } }
+/*--------------------------
+SECCION AGENCIA
+----------------------------*/
+.agencia {
+  background: #fff;
+  color: #0753B5; }
+
+.agencia img {
+  width: 80%;
+  margin: 0 auto;
+  display: block; }
 
 /*# sourceMappingURL=estilos.css.map */
