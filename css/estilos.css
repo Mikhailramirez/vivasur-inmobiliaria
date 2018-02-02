@@ -28,7 +28,8 @@ body {
   height: auto; }
 
 /*estilos para el boton: buscar y menu*/
-.boton-buscar, .boton-menu {
+.boton-buscar,
+.boton-menu {
   border: 0;
   font-size: 2rem;
   margin: 0;
@@ -36,7 +37,8 @@ body {
   background: transparent;
   color: #fff; }
 
-.boton-buscar:focus, .boton-menu:focus {
+.boton-buscar:focus,
+.boton-menu:focus {
   outline: 0; }
 
 .boton-buscar {
@@ -138,7 +140,8 @@ SECCION TU MEJOR ELECCION
 .tu-mejor-eleccion h2 span {
   color: red; }
 
-.tu-mejor-eleccion ul, .tu-mejor-eleccion ul li {
+.tu-mejor-eleccion ul,
+.tu-mejor-eleccion ul li {
   list-style: none; }
 
 .tu-mejor-eleccion ul li .fa {
@@ -281,7 +284,112 @@ SECCION PIE DE PAGINA
 EMPIEZAN LAS MEDIAS QUERIES
 ---------------------------*/
 @media (min-width: 768px) {
-  body {
-    background: red; } }
+  #menu-principal {
+    height: auto !important;
+    display: block;
+    flex: 0 1 auto;
+    margin-left: auto;
+    order: 1; }
+
+  #menu-principal ul {
+    display: flex;
+    margin: 1rem 0 0 0; }
+
+  #menu-principal ul li a {
+    padding: .8rem;
+    text-transform: capitalize;
+    margin: 0 .3rem;
+    border-top: 0px;
+    border-bottom: 4px solid transparent;
+    transition: all .5s ease; }
+
+  #menu-principal ul li.active a,
+  #menu-principal ul li.active a:hover {
+    color: #858584;
+    border-bottom: 4px solid; }
+
+  .boton-buscar {
+    margin-left: 1rem;
+    margin-right: 0;
+    order: 2; }
+
+  #bloque-buscar {
+    order: 3;
+    position: absolute;
+    width: 20rem;
+    right: 8rem;
+    top: 5rem;
+    transition: all .5s ease; }
+
+  /*seccion servicios*/
+  .servicios article {
+    align-items: center;
+    margin: 1rem 0;
+    flex-direction: column;
+    text-align: center; }
+
+  .servicios img {
+    flex: 0 0 160px;
+    overflow: hidden;
+    margin-right: 0rem;
+    margin-bottom: 1rem;
+    transition: all 1s ease; }
+
+  .servicios article:hover img {
+    transform: rotateY(360deg);
+    transform-style: preserve-3d; }
+
+  .servicios h3 a::after {
+    content: ""; }
+
+  .servicios h3 {
+    margin: 0 0 .5rem 0;
+    font-size: 1.5rem;
+    flex: 0 1 auto;
+    width: 100%; }
+
+  .servicios h3 a {
+    display: block;
+    width: 100%; }
+
+  .servicios p {
+    width: 100%; }
+
+  .btn-secondary {
+    margin-top: auto; } }
+@media (min-width: 992px) {
+  html {
+    font-size: 16px; }
+
+  .tu-mejor-eleccion ul li {
+    display: flex;
+    min-height: 7rem; }
+
+  .tu-mejor-eleccion ul li .fa {
+    text-align: center;
+    flex: 0 1 auto;
+    margin-right: 1rem;
+    transition: all 1s ease; }
+
+  .tu-mejor-eleccion ul li:hover .fa {
+    transform: rotateY(360deg);
+    transform-style: preserve-3d;
+    background: red; }
+
+  .contenedor-eleccion {
+    flex: 1 0 0px; }
+
+  .tu-mejor-eleccion ul li .contenedor-eleccion h4 {
+    margin-top: 0;
+    font-size: 1rem;
+    margin: 0; }
+
+  .tu-mejor-eleccion ul:first-child .fa {
+    order: 1;
+    margin-left: 1rem;
+    margin-right: 0; }
+
+  .tu-mejor-eleccion ul li p {
+    font-size: .85rem; } }
 
 /*# sourceMappingURL=estilos.css.map */
