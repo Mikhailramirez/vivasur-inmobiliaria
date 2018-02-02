@@ -14,6 +14,9 @@
     <!-- cargando iconos -->
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
+    <!-- carga de galeria de imagenes -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+
     <!-- carga de archivos css -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/estilos.css">
@@ -30,7 +33,7 @@
                 <button type="button" class="boton-buscar" data-toggle="collapse" data-target="#bloque-buscar" aria-expanded="false">
                     <i class="fa fa-search" aria-hidden="true"></i>
                 </button>
-                <button type="button" class="boton-menu" data-toggle="collapse" data-target="#menu-principal" aria-expanded="false">
+                <button type="button" class="boton-menu d-md-none d-lg-none d-xl-none" data-toggle="collapse" data-target="#menu-principal" aria-expanded="false">
                     <i class="fa fa-bars" aria-hidden="true"></i>
                 </button>
                 <form action="#" id="bloque-buscar" class="collapse">
@@ -142,42 +145,117 @@
             </div>
         </div>
     </section>
-    <main class="servicios ">
-        <h2>asesores inmobiliarios</h2>
-        <article>
-            <img src="images/servicio-1.svg " alt="servicios profesionales ">
-            <h3>servicios profesionales</h3>
-        </article>
-        <article>
-            <img src="images/servicio-2.svg " alt="servicios profesionales ">
-            <h3>servicios profesionales</h3>
-        </article>
-        <article>
-            <img src="images/servicio-3.svg " alt="servicios profesionales ">
-            <h3>servicios profesionales</h3>
-        </article>
+    <main class="servicios py-1">
+        <div class="container">
+            <h2 class="text-center font-weight-bold">asesores inmobiliarios</h2>
+            <div class="row">
+                <article class="col-md-4">
+                    <img src="images/servicio-1.svg" alt="servicios profesionales ">
+                    <h3> <a href="#">servicios profesionales</a></h3>
+                    <p class="d-none d-sm-block">Invierta en bienes raíces en cualquier parte del Perú y genere ingresos.Servicios adicionales: Boletin inmobiliario, Compendio inmobiliario, Diccionario inmobiliario, Aula Virtual</p>
+                    <a href="#" class="btn btn-secondary d-none d-sm-block">mas informacion</a>
+                </article>
+                <article class="col-md-4">
+                    <img src="images/servicio-2.svg" alt="servicios profesionales ">
+                    <h3> <a href="#">servicios profesionales</a></h3>
+                    <p class="d-none d-sm-block">Invierta en bienes raíces en cualquier parte del Perú y genere ingresos.Servicios adicionales: Boletin inmobiliario, Compendio inmobiliario, Diccionario inmobiliario, Aula Virtual</p>
+                    <a href="#" class="btn btn-secondary d-none d-sm-block">mas informacion</a>
+                </article>
+                <article class="col-md-4">
+                    <img src="images/servicio-3.svg" alt="servicios profesionales ">
+                    <h3><a href="">servicios profesionales</a></h3>
+                    <p class="d-none d-sm-block">Invierta en bienes raíces en cualquier parte del Perú y genere ingresos.Servicios adicionales: Boletin inmobiliario, Compendio inmobiliario, Diccionario inmobiliario, Aula Virtual</p>
+                    <a href="#" class="btn btn-secondary d-none d-sm-block">mas informacion</a>
+                </article>
+            </div>
+        </div>
     </main>
-    <section class="ultimos-proyectos ">
-        <h2>ultimos proyectos</h2>
-        <a href="# ">
-            <h4>salida caminaca</h4>
-            <img src="images/proeycto1.jpg " alt="proyecto salida caminaca ">
-        </a>
+    <section class="ultimos-proyectos py-1">
+        <div class="container">
+            <h2 class="text-center font-weight-bold">ultimos proyectos</h2>
+            <div class="owl-carousel">
+                <a href="#">
+                    <h4>salida caminaca</h4>
+                    <img src="images/proeycto1.jpg " alt="salida caminaca">
+                </a>
+
+                <a href="#">
+                    <h4>salida huancane</h4>
+                    <img src="images/descarga1.jpg" alt="salida huancane">
+                </a>
+
+                <a href="#">
+                    <h4>salida puno</h4>
+                    <img src="images/agente2.jpg" alt="salida puno">
+                </a>
+
+                <a href="#">
+                    <h4>salida cusco</h4>
+                    <img src="images/descarga3.jpg" alt="salida cusco">
+                </a>
+
+                <a href="#">
+                    <h4>salida arequipa</h4>
+                    <img src="images/descarga4.jpg" alt="salida arequipa">
+                </a>
+
+                <a href="#">
+                    <h4>salida lampa</h4>
+                    <img src="images/descarga5.jpg" alt="salida lampa">
+                </a>
+            </div>
+        </div>
     </section>
-    <footer class="piedepagina " role="contentinfo ">
+    <footer class="piedepagina py-1" role="contentinfo">
+       <div class="container">
         <p>2018 network todos los derechos reservados</p>
-        <ul>
-            <li><a href="# ">facebook</a></li>
-            <li><a href="# ">twitter</a></li>
-            <li><a href="# ">youtobe</a></li>
+        <ul class="redes-sociales">
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
         </ul>
+        </div>
     </footer>
-    <a href="ir-arriba " href="# ">Ir arriba</a>
+    <a href="ir-arriba" href="#"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
 
-    <script src="js/jquery-3.2.1.slim.min.js "></script>
+    <!-- carga de archivos JS -->
 
-    <script src="js/popper.min.js "></script>
-    <script src="js/bootstrap.min.js "></script>
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript">
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: true,
+            autoWidth: false,
+
+            navText: ['<i class="fa fa-arrow-circle-left" title="anterior"></i>', '<i class="fa fa-arrow-circle-right" title="siguiente"></i>'],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                500: {
+                    items: 2,
+                    margin: 20,
+                    stagePadding: 10
+                },
+                800: {
+                    items: 3,
+                    margin: 20,
+                    stagePadding: 10
+                },
+                1000: {
+                    items: 4,
+                    margin: 20,
+                    stagePadding: 10
+                }
+            }
+        })
+
+    </script>
 
 </body>
 
